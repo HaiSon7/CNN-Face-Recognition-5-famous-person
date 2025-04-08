@@ -5,7 +5,7 @@ from tensorflow.keras import models
 LABELS = ['Bill Gates', 'Elon Musk', 'Jeff Bezos', 'Mark Zuckerberg', 'Steve Jobs']
 face_detection = cv2.CascadeClassifier("haarcascades/haarcascade_frontalface_alt.xml")
 cam = cv2.VideoCapture(0)
-link_model = r"C:\Python\AI\Project\CNN\CNN_Project_Face_Recognition\face_recognition\model_famous_people_h5"
+link_model = r"models\best_face_recognition_model.keras"
 models = models.load_model(link_model)
 
 while True:
